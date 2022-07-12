@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>react-template</title>
+  <script src="https://unpkg.com/lodash@4.17.20"></script>
+</head>
+<body>
+  <noscript>
+    noscript
+  </noscript>
+  <div id="root"></div>
+  <% if (!isLocal) { %>
+    <script defer="defer" src="https://unpkg.com/browse/react@18.2.0/umd/react.production.min.js"></script>
+    <script defer="defer" src="https://unpkg.com/browse/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+  <% } %>
+</body>
+</html>
