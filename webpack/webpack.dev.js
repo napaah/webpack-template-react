@@ -1,7 +1,7 @@
-const { merge } = require('webpack-merge');
-const path = require('path');
+const { merge } = require('webpack-merge')
+const path = require('path')
 
-const baseConfig = require('./webpack.base');
+const baseConfig = require('./webpack.base')
 
 module.exports = async (env) => {
   return merge(baseConfig(env), {
@@ -25,12 +25,7 @@ module.exports = async (env) => {
             {
               loader: 'sass-resources-loader',
               options: {
-                resources: [
-                  path.resolve(
-                    __dirname,
-                    '../src/style/var.scss'
-                  ),
-                ],
+                resources: [path.resolve(__dirname, '../src/style/var.scss')],
               },
             },
           ],
@@ -43,5 +38,5 @@ module.exports = async (env) => {
       //   manifest: require('../dist/vendors-manifest.json')
       // }),
     ],
-  });
-};
+  })
+}

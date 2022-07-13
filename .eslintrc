@@ -1,0 +1,51 @@
+{
+  "parser": "@babel/eslint-parser",
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2020
+  },
+  "rules": {
+    "end-of-line": "off",
+    "no-new": "off",
+    "no-shadow": "off",
+    "no-bitwise": "off",
+    "func-names": "off",
+    "no-console": "off",
+    "no-plusplus": "off",
+    "default-case": "off",
+    "prefer-template": "off",
+    "consistent-return": "off",
+    "no-param-reassign": "off",
+    "no-nested-ternary": "off",
+    "no-underscore-dangle": "off",
+    "no-unused-expressions": "off",
+    "no-restricted-globals": "off",
+    "no-use-before-define": "off",
+    "class-methods-use-this": "off",
+    "global-require": "off",
+    "prefer-destructuring": ["error", { "object": true, "array": false }],
+    // jsx
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": "off",
+    "react/destructuring-assignment": "off",
+    "react/button-has-type": "off",
+    // eslint-plugin-import
+    "import/order": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/no-dynamic-require": "off"
+  }
+}
